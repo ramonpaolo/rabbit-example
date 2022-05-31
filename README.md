@@ -29,6 +29,21 @@ $ git clone https://github.com/ramonpaolo/rabbit-example.git
 # Entrando no projeto
 $ cd rabbit-example
 
+# Entrando no serviço
+$ cd ./services/consumer
+
+# Instalando as dependências do serviço
+$ yarn
+
+# Entrando no serviço
+$ cd ../sender
+
+# Instalando as dependências
+$ yarn
+
+# Entrando na pasta raiz
+$ cd ../..
+
 # Subir os conteiners
 $ docker-compose up --build -d
 ```
