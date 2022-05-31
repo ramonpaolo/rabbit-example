@@ -5,6 +5,8 @@
 - [Como o projeto funciona?](#como-o-projeto-funciona)
 - [Problemas*](#problemas)
 
+Artigo no Medium: [O que é o RabbitMQ, e como utilizar?](https://medium.com/@ramonpaolo/o-que-%C3%A9-o-rabbitmq-e-como-utilizar-c3ce2406a983)
+
 # O que é esse projeto?
 Esse projeto, é fruto de um artigo feito no Medium, para explicar sobre o RabbitMQ.
 
