@@ -39,7 +39,9 @@ E poderá visitar a URL: [http://localhost/](http://localhost/), para visualizar
 
 # Como o projeto funciona?
 
-Ao fazer requisição GET para o endpoint *"/sender/Message"*, o Express irá receber a requisição, e irá enviar uma mensagem para o tópico "topic", usando o RabbitMQ. Após o envio da mensagem, o serviço "consumer", irá ouvir(consumir) a mensagem, e salvar a mensagem, em um arquivo .txt, para quando for requisitado pelo endpoint "/", o nodejs possa ler o arquivo e entregar o conteúdo para o usuário do outro serviço.
+Ao fazer requisição GET para o endpoint *"/sender/Message"*, o Express irá receber a requisição, e irá enviar uma mensagem para o tópico "topic", usando o RabbitMQ.
+
+Após o envio da mensagem, o serviço "consumer", irá ouvir(consumir) a mensagem, e salvar a mensagem em um arquivo .txt, para quando for requisitado pelo endpoint "/", o nodejs possa ler o arquivo e entregar o conteúdo para o usuário.
 
 NGINX está sendo utilizado para fazer load balacing dos serviços, podendo assim, fazer quantas replicas de serviço, você desejar.
 
