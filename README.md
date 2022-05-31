@@ -21,7 +21,7 @@ Tópicos abordados no Artigo/Projeto:
 # Como rodar o projeto?
 Para rodar o projeto em sua máquina, basta clonar o repositório em sua máquina, e certificar que o Docker Daemon esteja rodando.
 ```bash
-# Clocando o repositório
+# Clonando o repositório
 $ git clone https://github.com/ramonpaolo/rabbit-example.git
 
 # Entrando no projeto
