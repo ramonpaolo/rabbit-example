@@ -1,0 +1,61 @@
+version: "3.8"
+
+services:
+    sender:
+        build: 
+            dockerfile: ./docker/sender.dockerfile
+            context: .
+        image: sender_node_example_rabbitmq
+        container_name: sender_node_example_rabbitmq
+        ports:
+            - "3000"
+        networks:
+            - network
+        environment:
+            - NODE_ENV=production
+        depends_on:
+            - rabbitmq
+            - nginx
+
+    consumer:
+        build: 
+            dockerfile: ./docker/consumer.dockerfile
+            context: .
+        image: consumer_node_example_rabbitmq
+        ports:
+            - "3000"
+        networks:
+            - network
+        environment:
+            - NODE_ENV=production
+        depends_on:
+            - rabbitmq
+            - nginx
+        deploy:
+          replicas: 2
+
+    rabbitmq:
+        build:
+            dockerfile: ./docker/rabbitMQ.dockerfile
+            context: .
+        image: rabb
+        container_name: rabbitmq
+        ports:
+            - "5672"
+        networks:
+            - network
+
+    nginx:
+        build: 
+            dockerfile: ./docker/nginx.dockerfile
+            context: .
+        image: nginx
+        container_name: nginx
+        ports:
+            - "80:80"
+        networks:
+            - network
+
+networks:
+    network:
+        driver: bridge

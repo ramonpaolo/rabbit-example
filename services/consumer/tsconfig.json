@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "allowJs": false,
+        "outDir": "./dist",
+        "removeComments": true,
+        "importsNotUsedAsValues": "remove",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "useUnknownInCatchVariables": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true
+    },
+    "exclude": [
+        "jest.config.ts",
+        "babel.config.js"
+    ]
+}
