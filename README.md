@@ -31,9 +31,9 @@ $ cd rabbit-example
 $ docker-compose up --build -d
 ```
 
-Após isso, poderá visitar a URL: [https://localhost/sender/Testando](https://localhost/sender/Testando), onde será enviado a mensagem "Testando", para um tópico do RabbitMQ, onde outro serviço irá ouvir a mensagem.
+Após isso, poderá visitar a URL: [http://localhost/sender/Testando](http://localhost/sender/Testando), onde será enviado a mensagem "Testando", para um tópico do RabbitMQ, onde outro serviço irá ouvir a mensagem.
 
-E poderá visitar a URL: [https://localhost/](https://localhost/), para visualizar os dados recebidos pelo RabbitMQ.
+E poderá visitar a URL: [http://localhost/](http://localhost/), para visualizar os dados recebidos pelo RabbitMQ.
 
 ---
 
